@@ -1,5 +1,5 @@
 // export const JSON_API_PRODUCTS = 'https://mobile-legends-kg.herokuapp.com/api'
-export const JSON_API_PRODUCTS = "http://localhost:8001/Products";
+export const JSON_API_PRODUCTS = "http://localhost:8000/Products";
 export const AUTH_API_REG =
   "https://intense-retreat-64750.herokuapp.com/auth/registration";
 export const AUTH_API_LOGI =
