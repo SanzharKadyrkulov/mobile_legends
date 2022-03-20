@@ -52,7 +52,7 @@ const EditProduct = () => {
 
 	const handleEdit = async (id, product) => {
 		await editProduct(id, product);
-		history.push('/productlist');
+		history.push('/productList');
 	};
 	const [product, setProduct] = useState(productDetails);
 	useEffect(() => {
@@ -140,7 +140,7 @@ const EditProduct = () => {
 						<Button onClick={() => handleEdit(productDetails.id, product)}>
 							<SaveIcon style={{ color: '#dac19d' }} />
 						</Button>
-						<Button onClick={() => history.push('/productlist')}>
+						<Button onClick={() => history.push('/productList')}>
 							<CancelIcon style={{ color: '#dac19d' }} />
 						</Button>
 					</form>

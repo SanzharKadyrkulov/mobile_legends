@@ -25,7 +25,7 @@ const Advertising = () => {
 	const classes = useStyles();
 	const { history } = useProducts();
 	setTimeout(() => {
-		history.push('/productlist');
+		history.push('/productList');
 	}, 2000);
 	return (
 		<Paper

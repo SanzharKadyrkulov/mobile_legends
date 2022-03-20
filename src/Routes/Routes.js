@@ -24,11 +24,11 @@ const Routes = () => {
 					<Route exact path='/login' component={Login} />
 					<Route exact path='/registration' component={Registration} />
 					<Route exact path='/' component={Home} />
-					<ProtectedRoute exact path='/productlist' component={ProductList} />
-					<Route exact path='/addproduct' component={AddProduct} />
+					<ProtectedRoute exact path='/productList' component={ProductList} />
+					<Route exact path='/addProduct' component={AddProduct} />
 					<ProtectedRoute exact path='/cart' component={Cart} />
 					<ProtectedRoute exact path='/fav' component={Fav} />
-					<Route exact path='/editproduct/:id' component={EditProduct} />
+					<Route exact path='/editProduct/:id' component={EditProduct} />
 					<Route exact path='/details/:id' component={ProductDetails} />
 					<Route exact path='/comments/:id' component={ProductComments} />
 					<Route exact path='/order' component={OrderForm} />

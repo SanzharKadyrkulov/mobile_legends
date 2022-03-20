@@ -38,7 +38,7 @@ const Welcome = () => {
 					<Grid item md={6}>
 						<div className={classes.mainFeaturesPostContent}>
 							<Button
-								href='/productlist'
+								href='/productList'
 								variant='contained'
 								style={{ backgroundColor: '#19bbef' }}
 							>

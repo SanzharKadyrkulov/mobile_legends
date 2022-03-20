@@ -302,7 +302,7 @@ const ProductComments = () => {
 										aria-label='account of current user'
 										aria-haspopup='true'
 										color='inherit'
-										onClick={() => history.push('/productlist')}
+										onClick={() => history.push('/productList')}
 									>
 										<RestoreIcon
 											style={{

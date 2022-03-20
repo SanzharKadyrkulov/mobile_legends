@@ -142,7 +142,7 @@ const ProductList = () => {
 								<Grid item>
 									{user && user.email === 'sancho@gmail.com' ? (
 										<Button
-											onClick={() => history.push('/addproduct')}
+											onClick={() => history.push('/addProduct')}
 											variant='outlined'
 											color='secondary'
 										>

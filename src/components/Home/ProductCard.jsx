@@ -188,7 +188,7 @@ const ProductCard = ({ item }) => {
 					{user && user.email === 'sancho@gmail.com' ? (
 						<>
 							<Button
-								onClick={() => history.push(`/editproduct/${item.id}`)}
+								onClick={() => history.push(`/editProduct/${item.id}`)}
 								size='small'
 							>
 								Edit

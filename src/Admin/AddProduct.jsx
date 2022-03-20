@@ -49,7 +49,7 @@ const AddProduct = () => {
 
 	const handleClick = async (product) => {
 		await addProduct(product);
-		history.push('/productlist');
+		history.push('/productList');
 	};
 	const [product, setProduct] = useState({
 		title: '',
@@ -160,7 +160,7 @@ const AddProduct = () => {
 					<Button onClick={() => handleClick(product)}>
 						<SaveIcon style={{ color: '#010101' }} />
 					</Button>
-					<Button onClick={() => history.push('/productlist')}>
+					<Button onClick={() => history.push('/productList')}>
 						<CancelIcon style={{ color: '#010101' }} />
 					</Button>
 				</form>

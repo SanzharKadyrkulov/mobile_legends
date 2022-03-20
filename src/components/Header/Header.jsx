@@ -44,7 +44,7 @@ const Header = () => {
 							<Song />
 							<Nav.Link href='/'>Home</Nav.Link>
 							<Nav.Link href=''>About us</Nav.Link>
-							<Nav.Link href='/productlist'>Catalog</Nav.Link>
+							<Nav.Link href='/productList'>Catalog</Nav.Link>
 							<Nav.Link href=''>Chat</Nav.Link>
 							<Nav.Link href='/cart'>Busket</Nav.Link>
 							<Nav.Link href='/fav'>Favorite</Nav.Link>
