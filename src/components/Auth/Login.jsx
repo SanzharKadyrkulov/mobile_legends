@@ -63,16 +63,11 @@ const Login = () => {
 		};
 		newObj[e.target.name] = e.target.value;
 		setNewUser(newObj);
-		console.log(newObj);
 	};
 
 	const signin = (e) => {
 		e.preventDefault();
-		try {
-			loginUser(newUser);
-		} catch (e) {
-			console.log(e);
-		}
+		loginUser(newUser);
 	};
 	useEffect(() => {
 		if (user) {

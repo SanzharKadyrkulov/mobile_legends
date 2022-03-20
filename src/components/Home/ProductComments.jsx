@@ -84,7 +84,6 @@ const ProductComments = () => {
 				comment: e.target.value,
 				date: d.toISOString(),
 			});
-			console.log(comment);
 		}
 	};
 	const sendComment = async (e, id, productos) => {
@@ -117,7 +116,6 @@ const ProductComments = () => {
 	const editComment = async (index, id, productos) => {
 		handleClose();
 		let editedComment = [...productos.comments];
-		console.log(index);
 		editedComment.splice(index, 1, comment);
 		let productWithEditedComment = {
 			...productos,

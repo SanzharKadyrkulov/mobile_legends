@@ -62,15 +62,10 @@ const Registration = () => {
 		};
 		newObj[e.target.name] = e.target.value;
 		setNewUser(newObj);
-		console.log(newObj);
 	};
 	const signup = (e) => {
 		e.preventDefault();
-		try {
-			registerUser(newUser);
-		} catch (e) {
-			console.log(e);
-		}
+		registerUser(newUser);
 	};
 	useEffect(() => {
 		if (succes) {

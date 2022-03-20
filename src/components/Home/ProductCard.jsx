@@ -84,7 +84,6 @@ const ProductCard = ({ item }) => {
 		setNewCart(cart);
 	}, [cart]);
 	useEffect(() => {
-		console.log('this is productCard item ', item.likes);
 		getFav();
 	}, []);
 	useEffect(() => {
@@ -92,9 +91,7 @@ const ProductCard = ({ item }) => {
 	}, [fav]);
 
 	const [likes, setLikes] = useState(item.likes.length);
-	// console.log(newCart, 'this is cart')
 	const checkItemInCart = (id) => {
-		// console.log('HERE', newCart)
 		if (newCart && newCart.products) {
 			const foundItem = newCart?.products.find(
 				(product) => product.item.id === id
@@ -103,7 +100,6 @@ const ProductCard = ({ item }) => {
 		}
 	};
 	const checkItemInFav = (id) => {
-		// console.log('HERE', newFav)
 		if (newFav && newFav.products) {
 			const foundItem = newFav?.products.find(
 				(product) => product.item.id === id
