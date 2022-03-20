@@ -1,22 +1,22 @@
-import React, { useEffect } from "react";
-import { useAuth } from "./contexts/AuthContext";
-import Routes from "./Routes/Routes";
-
-
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react';
+import { useAuth } from './contexts/AuthContext';
+import Routes from './Routes/Routes';
 
 function App() {
-  const {checkAuth} = useAuth()
-  useEffect(() => {
-    if(localStorage.getItem('token')){
-      checkAuth()
-    }
-  }, [])
+	alert(`Login: sancho@gmail.com /n Password: 123456`);
+	const { checkAuth } = useAuth();
+	useEffect(() => {
+		if (localStorage.getItem('token')) {
+			checkAuth();
+		}
+	}, []);
 
-  return (
-    <>
-      <Routes />
-    </>
-  );
+	return (
+		<>
+			<Routes />
+		</>
+	);
 }
 
 export default App;
